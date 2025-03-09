@@ -1,8 +1,11 @@
 import { useState } from "react";
 import avatar from "../../assets/images/avatar-icon.png";
-import { formatDate } from "../../utils/formatDate";
-import { AiFillStar } from 'react-icons/ai';
+import { formateDate } from "../../utils/formateDate";
+
+//import { formatDate } from "../../utils/formatDate";
+
 import FeedbackForm from "./FeedbackForm";
+import { AiFillStar } from "react-icons/ai";
 
 const Feedback = () => {
     const [showFeedbackForm, setShowFeedbackForm] = useState(false);
@@ -20,15 +23,17 @@ const Feedback = () => {
                         </figure>
                         <div>
                             <h5 className="text-[16px] leading-6 text-primaryColor font-bold">Ali Ahmed</h5>
-                            <p className="text-[14px] leading-6 text-textColor">{formatDate("02-14-2023")}</p>
+                            <p className="text-[14px] leading-6 text-textColor">{formateDate("02-14-2023")}</p>
                             <p className="text__para mt-3 font-medium text-[15px]">
                                 Good services, highly recommended 👍
                             </p>
+                   
                         </div>
                     </div>
                     <div className="flex gap-1">
                         {[...Array(5).keys()].map((_, index) => (
-                            <AiFillStar key={index} color='#0067FF' />
+                          //  <AiFillStar key={index} color='#0067FF' />
+                          <AiFillStar key={index} color='#0067FF'/>
                         ))}
                     </div>
                 </div>
