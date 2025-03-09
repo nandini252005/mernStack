@@ -56,24 +56,35 @@ const Room = () => {
     const { roomId } = useParams();
     const meetingRef = useRef();
 
-    function randomID(len) {
+    // Function to generate a random ID of a given length
+    function generateRandomID(length = 5) {
         let result = '';
-        if (result) return result;
-        var chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
-            maxPos = chars.length,
-            i;
-        len = len || 5;
-        for (i = 0; i < len; i++) {
-            result += chars.charAt(Math.floor(Math.random() * maxPos));
+        const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        const maxIndex = characters.length;
+
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * maxIndex));
         }
         return result;
     }
 
-    const myMeeting = async (element) => {
+    const initializeMeeting = async (element) => {
         const appID = 7946855;
         const serverSecret = "b9395d24d25d5099801f35180509566e";
-        const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomId, randomID(5), randomID(5));
+        
+        // Generate a token for authentication
+        const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
+            appID, 
+            serverSecret, 
+            roomId, 
+            generateRandomID(), 
+            generateRandomID()
+        );
+
+        // Create the meeting instance
         const zp = ZegoUIKitPrebuilt.create(kitToken);
+        
+        // Configure and join the room
         zp.joinRoom({
             container: element,
             scenario: {
@@ -87,8 +98,8 @@ const Room = () => {
     };
 
     useEffect(() => {
-        myMeeting(meetingRef.current);
-    }, []); // Empty dependency array means this effect runs once on mount
+        initializeMeeting(meetingRef.current);
+    }, []); // Runs only once when the component mounts
 
     return (
         <section>
