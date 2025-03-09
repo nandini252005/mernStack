@@ -166,7 +166,7 @@ const Chat = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8000/completions", options);
+      const response = await fetch("http://localhost:5173/completions", options);
       const data = await response.json();
 
       if (data.choices && data.choices.length > 0) {
