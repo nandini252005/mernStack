@@ -1,27 +1,27 @@
 export const faqs = [
   {
-    question: "Sizdiń densaýlyqqa qyzmetteriniz qandaı?",
+    question: "What healthcare services do you provide?",
     content:
-      "One Medical sapasy men qoljetimdi qyzmet kórsetýdiń joǵary deńgeıin qamtamasyz etetin pasıentterdiń qajettilikterin eskere otyryp ázirlengen jaqsartylǵan medısınalyq kómek úlgisine negizdelgen. Biz buǵan ınovasıalyq dızaın, tutynýshylarǵa tamasha qyzmet kórsetý jáne tehnologıany tıimdi paıdalaný arqyly qol jetkizemiz.",
+      "One Medical is based on an enhanced medical care model designed to ensure high-quality and affordable healthcare services that meet patient needs. We achieve this through innovative design, excellent customer service, and efficient use of technology.",
   },
   {
-    question: "Eger maǵan aýrýhanaǵa barý kerek bolsa ne bolady?",
+    question: "What happens if I need to go to the hospital?",
     content:
-      "One Medical sapasy men qoljetimdi qyzmet kórsetýdiń joǵary deńgeıin qamtamasyz etetin pasıentterdiń qajettilikterin eskere otyryp ázirlengen jaqsartylǵan medısınalyq kómek úlgisine negizdelgen. Biz buǵan ınovasıalyq dızaın, tutynýshylarǵa tamasha qyzmet kórsetý jáne tehnologıany tıimdi paıdalaný arqyly qol jetkizemiz.",
+      "One Medical ensures a high level of quality and affordable healthcare services tailored to patients' needs. If you need hospital care, we will assist you in navigating the process and ensure you receive the best possible treatment.",
   },
   {
-    question: "Eger maǵan aýrýhanaǵa barý kerek bolsa ne bolady?",
+    question: "What if I require hospitalization?",
     content:
-      "One Medical sapasy men qoljetimdi qyzmet kórsetýdiń joǵary deńgeıin qamtamasyz etetin pasıentterdiń qajettilikterin eskere otyryp ázirlengen jaqsartylǵan medısınalyq kómek úlgisine negizdelgen. Biz buǵan ınovasıalyq dızaın, tutynýshylarǵa tamasha qyzmet kórsetý jáne tehnologıany tıimdi paıdalaný arqyly qol jetkizemiz.",
+      "One Medical is committed to providing enhanced medical care, ensuring that patients receive the best treatment possible. If hospitalization is necessary, we guide you through the process and help coordinate your care efficiently.",
   },
   {
-    question: "Men sizdiń medısınalyq kabınetińizge bara alamyn ba?",
+    question: "Can I visit your medical office?",
     content:
-      "One Medical sapasy men qoljetimdi qyzmet kórsetýdiń joǵary deńgeıin qamtamasyz etetin pasıentterdiń qajettilikterin eskere otyryp ázirlengen jaqsartylǵan medısınalyq kómek úlgisine negizdelgen. Biz buǵan ınovasıalyq dızaın, tutynýshylarǵa tamasha qyzmet kórsetý jáne tehnologıany tıimdi paıdalaný arqyly qol jetkizemiz.",
+      "Yes, you are welcome to visit our medical office. One Medical offers high-quality care in a comfortable and patient-friendly environment, combining innovative healthcare solutions with excellent customer service.",
   },
   {
-    question: "Siz shuǵyl medısınalyq kómek kórsetesiz be?",
+    question: "Do you provide emergency medical care?",
     content:
-      "One Medical sapasy men qoljetimdi qyzmet kórsetýdiń joǵary deńgeıin qamtamasyz etetin pasıentterdiń qajettilikterin eskere otyryp ázirlengen jaqsartylǵan medısınalyq kómek úlgisine negizdelgen. Biz buǵan ınovasıalyq dızaın, tutynýshylarǵa tamasha qyzmet kórsetý jáne tehnologıany tıimdi paıdalaný arqyly qol jetkizemiz.",
+      "Yes, we offer urgent medical care services. One Medical is committed to delivering high-quality, timely medical assistance through a combination of innovation, customer care, and technology-driven solutions.",
   },
 ];
