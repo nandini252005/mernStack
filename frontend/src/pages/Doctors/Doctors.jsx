@@ -4,7 +4,8 @@ import DoctorCard from './../../components/Doctors/DoctorCard';
 import { doctors } from './../../assets/data/doctors';
 import Testimonial from '../../components/Testimonial/Testimonial';
 
-const Doctors = () => {
+const Doctors = () =>
+     {
     return <>
         {/* Search Section */}
         <section className='bg-[#fff9ea]'>
